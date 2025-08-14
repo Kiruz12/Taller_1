@@ -38,7 +38,16 @@ while (n == true){
             System.out.println(Ventas);
              break;
             case 2:
-        
+               if (Ventas.isEmpty()) {
+                        System.out.println("No hay ventas registradas.");
+                    } else {
+                        System.out.println("\nListado de ventas:");
+                        System.out.println("ID\tProducto\tCantidad\tP.Unitario\tTotal");
+                        for (int[] v : Ventas) {
+                            System.out.printf("00%d\t%d\t\t%d\t\t%d\t\t%d\n", 
+                                            v[0], v[1], v[2], v[3], v[4]);
+                        }
+                    }
              break;
             case 3:
         
